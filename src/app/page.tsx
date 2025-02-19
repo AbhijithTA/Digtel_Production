@@ -4,6 +4,7 @@ import { HeroSection } from "@/sections/Hero";
 import { AboutSection } from "@/sections/About";
 import { Card, Carousel } from "@/components/ui/apple-cards-carousel";
 import { services } from "@/data/services";
+import OurStory from "@/components/OurStory";
 
 export default function Home() {
   const cards = [
@@ -38,6 +39,7 @@ export default function Home() {
           <Card key={index} card={card} index={index} />
         ))}
       />
+      <OurStory />
     </div>
   );
 }
